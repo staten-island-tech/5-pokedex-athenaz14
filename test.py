@@ -1,4 +1,4 @@
-sushi_orders = [
+""" sushi_orders = [
     {"name": "California Roll", "price": 8},
     {"name": "Spicy Tuna Roll", "price": 10},
     {"name": "Salmon Nigiri", "price": 6},
@@ -11,14 +11,29 @@ sushi_orders = [
     {"name": "California Roll", "price": 8}
 ]
 def receipt(orders):
-    receipt = {}
-    for order in orders:
-        if order["name"] in receipt:
-            +=
+    the_receipt = {}
+    for sushi in orders:
+        if sushi["name"] in the_receipt:
+            the_receipt[sushi['name']]['quantity'] +=1
         else:
-            receipt[order["name"]] = {
-                "price": order['price'],
+            the_receipt[sushi["name"]] = {
+                "price": sushi['price'],
                 "quantity": 1
             }
+    for sushi, value in the_receipt.items():
+        price = value['price'] * value['quantity']
+        print(sushi, value['quantity'], price)
     print(receipt)
-receipt(sushi_orders)
+receipt(sushi_orders) """
+#for key, value in student.items():
+wards = {
+    "Cardiology":  ["Alice", "Bob", "Carol"],
+    "Neurology":   ["Diana", "Eve"],
+    "Orthopedics": ["Frank", "Grace", "Hank"],
+    "Oncology":    ["Ivy", "Bob"]
+}
+staff = {}
+for ward, staff in wards.items():
+    
+        print(ward,staff)
+    
