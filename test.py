@@ -25,6 +25,7 @@ def receipt(orders):
         print(sushi, value['quantity'], price)
     print(receipt)
 receipt(sushi_orders) """
+
 #for key, value in student.items():
 wards = {
     "Cardiology":  ["Alice", "Bob", "Carol"],
@@ -33,7 +34,32 @@ wards = {
     "Oncology":    ["Ivy", "Bob"]
 }
 staff = {}
-for ward, staff in wards.items():
-    
-        print(ward,staff)
-    
+
+for dept, docs in wards.items():
+    for doc in docs:
+        if doc not in staff:
+            staff[doc] = [dept]
+        else:
+            staff[doc].append(dept)
+print(staff["Bob"])
+
+""" for dept, docs in wards.items():
+    for doc in docs:
+        if doc not in staff:
+            staff[doc] = []
+            staff[doc].append(dept)
+print(staff["Bob"])
+ """
+
+
+
+
+
+"""             staff[docs[wards]]+=1
+        else:
+            staff[doc[wards]] = {
+                "ward": _[wards]
+                "doc": []
+            }
+        print(staff)
+staff("Alice") """
