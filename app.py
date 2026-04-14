@@ -6,15 +6,6 @@ data = json.load(pokedex)
 print(data[0])
 # Create a function that will take the data from the JSON file and you will iterate through the list of pokemon and print each pokemons name.
 names = {}
-def pokemon_name(json):
-
-    for pokemon, pokemon_names  in data.items():
-        for pokemon_name in pokemon_names:
-            if pokemon_name not in names:
-                names[pokemon_name] = [pokemon]
-            else:
-                names[pokemon_name].append(pokemon)
-print(names)
 
 
 # Add a language choice feature and print the pokemons name based on the user input
