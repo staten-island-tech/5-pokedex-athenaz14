@@ -15,7 +15,7 @@ for index, pokemon in enumerate(data):
         if pokemon_name in items.json:
  """
 # Add a language choice feature and print the pokemons name based on the user input
-Language = input("Enter a language: English, French, Chinese, Japanese")
+""" Language = input("Enter a language: English, French, Chinese, Japanese")
 if Language == "English":
     for index, pokemon in enumerate(data): 
         print(pokemon["name"]["english"])
@@ -28,11 +28,10 @@ elif Language == "Chinese":
 else:
     for index, pokemon in enumerate(data): 
         print(pokemon["name"]["japanese"])
-
+ """
 # Develop a function that creates a new list of pokemon based on the type the user searched for. If no pokemon was found of that type inform the user
-Type = input("Enter a type of pokemon:")
-if pokemon["type"] in data:
-    print(pokemon["type"])
+Type = int(input("Enter a type of pokemon:"))
+print(pokemon[Type])
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
 
 #For Leo/, help me come up with a clever final question, considering maybe showing all moves a pokemon has avaiable based on type
