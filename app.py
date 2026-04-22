@@ -33,7 +33,7 @@ for pokemon in data:
 new_list = {}
 type == int(input("Enter a type of pokemon: "))
 for pokemon in data:
-        if pokemon["type"][0-1000] in data:
+        if pokemon["type"][type] in data:
                 new_list.append(pokemon[type]["type"])
         else:
                 print("No pokemon found.")
