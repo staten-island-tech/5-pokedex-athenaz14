@@ -29,16 +29,22 @@ for pokemon in data:
 """ 
 for pokemon in data:
         print(pokemon["type"])
-
+"""
 new_list = {}
-type == int(input("Enter a type of pokemon: "))
-for pokemon in data:
-        if pokemon["type"][type] in data:
-                new_list.append(pokemon[type]["type"])
-        else:
-                print("No pokemon found.")
-                break
-        print(new_list)        
+type = input("")
+if type == pokemon["type"]:
+        new_list.append(pokemon[type]["type"])
+else:
+        print("No pokemon found.")
+print(new_list) """
+""" new_list = {}
+types = input("")
+for type in types:
+        if type not in new_list:
+                new_list.append(pokemon[type]["type"]) """
+
+
+
 """
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
 """ 
