@@ -29,6 +29,15 @@ for pokemon in data:
 """ 
 for pokemon in data:
         print(pokemon["type"])
+
+def pokemon(types, new_list):
+        new_list = {}
+        if types not in new_list:
+                new_list.append(pokemon[types]["type"])
+        pokemon(['Electric','Steel','Ghost'], new_list)
+        print(new_list)
+
+
 """
 new_list = {}
 type = input("")
