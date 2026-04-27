@@ -27,16 +27,24 @@ for pokemon in data:
 """
 # Develop a function that creates a new list of pokemon based on the type the user searched for. If no pokemon was found of that type inform the user
 """ 
-for pokemon in data:
+""" for pokemon in data:
         print(pokemon["type"])
-
-def pokemon(types, new_list):
+type = input("Enter a type:")
+new_list = {}
+for pokemon in data:
+        if type in pokemon["type"]:
+                print(pokemon["name"])
+        else:
+                print("No pokemon found")
+ """        
+""" types = [t['type']]
+ """""" def pokemon(types, new_list):
         new_list = {}
         if types not in new_list:
                 new_list.append(pokemon[types]["type"])
         pokemon(['Electric','Steel','Ghost'], new_list)
         print(new_list)
-
+ """
 
 """
 new_list = {}
@@ -57,16 +65,16 @@ for type in types:
 """
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
 """ 
-""" Search_Match = (input("All the names of the pokemon matching what the user searched for:"))
-if Search_Match in data:
-        return
+Search_Match = (input("All the names of the pokemon matching what the user searched for:"))
+if Search_Match in pokemon["name"]:
+        print(pokemon["name"])
 else:
         print("No pokemon found.")
- """""""""
-#For Leo/, help me come up with a clever final question, considering maybe showing all moves a pokemon has avaiable based on type
+"""#For Leo/, help me come up with a clever final question, considering maybe showing all moves a pokemon has avaiable based on type
 
 #Based on user input, show all moves that pokemon  could learn based on type. For example, if Charizard is fire/fyling, show all fire and flying moves.
 """ 
 """
+""" 
 """ Moves = (input("Enter a pokemon to learn all the moves could learn base on type."))
- """""""""
+ """""
