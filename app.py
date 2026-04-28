@@ -31,12 +31,13 @@ for pokemon in data:
         print(pokemon["type"])
 type = input("Enter a type:")
 new_list = {}
-for pokemon in data:
+""" 
+""" for pokemon in data:
         if type in pokemon["type"]:
                 print(pokemon["name"])
         else:
                 print("No pokemon found")
- """        
+ """""" """        
 """ types = [t['type']]
  """""" def pokemon(types, new_list):
         new_list = {}
